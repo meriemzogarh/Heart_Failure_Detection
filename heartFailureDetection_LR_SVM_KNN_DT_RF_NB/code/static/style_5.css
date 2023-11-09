@@ -1,0 +1,181 @@
+/* Add these styles to your existing CSS file */
+/* Variables */
+:root {
+    --ruler: 16px;
+    --color-red: #AE1100;
+    --color-bg: #EBECF0;
+    --color-shadow: #8a91ab;
+    --color-white: #FFF;
+  }
+  
+  /* Body and HTML */
+  /* Center the title both horizontally and vertically */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of the viewport height */
+}
+
+.segment {
+    text-align: center;
+}
+  body, html {
+    background-color: var(--color-bg);
+  }
+  
+  /* Fonts */
+  body, p, input, select, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: var(--ruler);
+  }
+  
+  /* Text and Shadows */
+  div, p {
+    color: var(--color-shadow);
+    text-shadow: 1px 1px 1px var(--color-white);
+  }
+  
+  /* Form Styles */
+  form {
+    padding: calc(var(--ruler));
+    width: calc(var(--ruler) * 20);
+    margin: 0 auto;
+  }
+  
+  .segment {
+    padding: calc(var(--ruler) * 2) 0;
+    text-align: center;
+  }
+  
+  /* Button and Input Styles */
+  button, input {
+    border: 0;
+    outline: 0;
+    font-size: var(--ruler);
+    border-radius: calc(var(--ruler) * 20);
+    padding: var(--ruler);
+    background-color: var(--color-bg);
+    text-shadow: 1px 1px 0 var(--color-white);
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    margin-bottom: calc(var(--ruler) * 1.5);
+    width: 100%;
+  }
+  
+  /* Input Styles */
+  input {
+    margin-right: calc(var(--ruler) / 2);
+    box-shadow: inset 2px 2px 5px var(--color-shadow), inset -5px -5px 10px var(--color-white);
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  input:focus {
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+  }
+  
+  /* Button Styles */
+  button {
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px var(--color-white), 5px 5px 20px var(--color-shadow);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    box-shadow: -2px -2px 5px var(--color-white), 2px 2px 5px var(--color-shadow);
+  }
+  
+  button:active {
+    box-shadow: inset 1px 1px 2px var(--color-shadow), inset -1px -1px 2px var(--color-white);
+  }
+  
+  /* Button Icon */
+  .icon {
+    margin-right: calc(var(--ruler) / 2);
+  }
+  
+  /* Unit Button Styles */
+  .unit {
+    border-radius: calc(var(--ruler) / 2);
+    line-height: 0;
+    width: calc(var(--ruler) * 3);
+    height: calc(var(--ruler) * 3);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 calc(var(--ruler) / 2);
+    font-size: calc(var(--ruler) * 1.2);
+  }
+  
+  .unit .icon {
+    margin-right: 0;
+  }
+  
+  /* Red Button Style */
+  .red {
+    display: block;
+    width: 100%;
+    color: var(--color-red);
+  }
+  
+  /* Input Group Styles */
+  .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .input-group label {
+    margin: 0;
+    flex: 1;
+  }
+
+/* Result Header */
+.result-header {
+    text-align: center;
+    color: var(--color-red);
+    margin-top: 20px;
+}
+
+/* Result Container */
+.result-container {
+    background-color: var(--color-white);
+    padding: var(--ruler);
+    box-shadow: 0 0 10px var(--color-shadow);
+    border-radius: var(--ruler);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/* Result Text */
+.result-text {
+    font-size: var(--ruler);
+    color: var(--color-shadow);
+}
+
+/* Back Link */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--color-red);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
